@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useTransition } from "react";
 import { addToCart } from "@/lib/cart-actions";
 
@@ -12,6 +13,7 @@ export function AddToCartButton({
   availableForSale: boolean;
   label?: string;
 }) {
+  const router = useRouter();
   const [isPending, startTransition] = useTransition();
 
   return (
@@ -20,6 +22,7 @@ export function AddToCartButton({
       onClick={() => {
         startTransition(async () => {
           await addToCart(variantId);
+          router.refresh();
         });
       }}
       disabled={!availableForSale || isPending}

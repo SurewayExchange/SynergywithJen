@@ -88,12 +88,18 @@ async function setShopifyCartId(cartId: string) {
 export async function getCart(): Promise<Cart | null> {
   if (isShopifyConfigured()) {
     const cartId = await getShopifyCartId();
-    if (!cartId) return null;
-
-    const data = await shopifyFetch<{ cart: Cart | null }>(GET_CART_QUERY, {
-      cartId,
-    });
-    return data.cart;
+    if (cartId) {
+      try {
+        const data = await shopifyFetch<{ cart: Cart | null }>(GET_CART_QUERY, {
+          cartId,
+        });
+        if (data.cart && data.cart.totalQuantity > 0) {
+          return data.cart;
+        }
+      } catch {
+        // Fall through to Jennifer's local cart.
+      }
+    }
   }
 
   const cart = await getLocalCart();
