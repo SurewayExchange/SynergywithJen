@@ -5,7 +5,7 @@ import { getProducts } from "@/lib/products";
 import { site } from "@/lib/site";
 
 const heroImage =
-  "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1600&q=80";
+  "https://images.unsplash.com/photo-1584305574647-0cc949a2bb9f?auto=format&fit=crop&w=1600&q=80";
 const ritualImage =
   "https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=1400&q=80";
 
