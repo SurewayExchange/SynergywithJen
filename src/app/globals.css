@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f4efe6;
+  --foreground: #1c2419;
+  --card: #fffaf3;
+  --muted: #5f6b5a;
+  --sage: #4f6f52;
+  --forest: #2c4630;
+  --terracotta: #c4784a;
+  --linen: #e8dfd0;
+  --ring: #4f6f52;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-sage: var(--sage);
+  --color-forest: var(--forest);
+  --color-terracotta: var(--terracotta);
+  --color-linen: var(--linen);
+  --color-ring: var(--ring);
+  --font-sans: "Outfit", "Outfit Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", "Fraunces Fallback", ui-serif, Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: #cfe0c8;
+  color: #1c2419;
+}
+
+.field {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid var(--linen);
+  background: #fffaf3;
+  padding: 0.85rem 1rem;
+  color: var(--foreground);
+  outline: none;
+}
+
+.field:focus {
+  box-shadow: 0 0 0 3px rgb(79 111 82 / 0.2);
+}
