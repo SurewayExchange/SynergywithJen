@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useTransition } from "react";
 import { removeFromCart, updateCartLine } from "@/lib/cart-actions";
 import { formatMoney } from "@/lib/products";
@@ -11,7 +12,12 @@ export function CartLineItem({ line }: { line: CartLine }) {
   return (
     <tr className={`border-b border-linen ${isPending ? "opacity-50" : ""}`}>
       <td className="py-5 pr-4">
-        <p className="font-medium">{line.merchandise.product.title}</p>
+        <Link
+          href={`/shop/${line.merchandise.product.handle}`}
+          className="font-medium hover:text-sage"
+        >
+          {line.merchandise.product.title}
+        </Link>
         {line.merchandise.title !== "Default Title" && (
           <p className="mt-1 text-sm text-muted">{line.merchandise.title}</p>
         )}

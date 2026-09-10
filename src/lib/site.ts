@@ -10,6 +10,7 @@ export const site = {
     headline: "Your personal guide to daily vitality",
     bio: "Jennifer Collins helps clients choose clean, effective supplements that fit real life — energy, recovery, immunity, and long-term wellness. As the sales representative behind Senergy with Jen, she reviews every formula and stays close after checkout so you are never guessing in the vitamin aisle.",
   },
+  url: "https://senergywithjen.vercel.app",
   email: "hello@senergywithjen.com",
   nav: [
     { href: "/", label: "Home" },

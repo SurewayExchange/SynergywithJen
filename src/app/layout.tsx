@@ -16,6 +16,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title: {
     default: `${site.name} | Vitamin supplements with Jennifer Collins`,
     template: `%s | ${site.name}`,

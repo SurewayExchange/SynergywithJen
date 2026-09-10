@@ -13,6 +13,30 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/shop/daily-synergy-multi",
+        destination: "/shop/daily-senergy-multi",
+        permanent: true,
+      },
+      {
+        source: "/synergywithjen",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/synergy-with-jen",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/synergy",
+        destination: "/",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
