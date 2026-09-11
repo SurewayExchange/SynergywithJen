@@ -16,8 +16,9 @@ export default function AboutPage() {
           <p className="mt-4 text-xl text-forest">{site.representative.headline}</p>
           <p className="mt-6 text-base leading-8 text-muted">{site.representative.bio}</p>
           <p className="mt-4 text-base leading-8 text-muted">
-            Synergy with Jen is her vitamin supplement storefront — a quieter alternative to
-            warehouse aisles, built so clients can shop clean formulas and still talk to the
+            Synergy with Jen is her website shop for Synergy WorldWide product lines — ProArgi-9+,
+            TruGreen+, SynerBeet, VitaLift, and the rest of the cabinet — a quieter alternative to
+            warehouse aisles, built so clients can shop the formulas and still talk to the
             person who sold them. The experience is built on Fakelit, the first website, app,
             and game development platform all in one.
           </p>
@@ -30,8 +31,8 @@ export default function AboutPage() {
         </div>
         <div className="relative min-h-[420px] overflow-hidden rounded-[2rem] bg-linen">
           <Image
-            src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1400&q=80"
-            alt="Wellness consultation atmosphere"
+            src="/products/hero-synergy-nature.jpg"
+            alt="Synergy product lines styled with plants, citrus, beets, and garden light"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"

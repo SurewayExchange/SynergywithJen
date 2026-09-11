@@ -28,7 +28,7 @@ export function SiteFooter() {
           <p className="text-sm tracking-[0.18em] text-white/60 uppercase">Guided by Jen</p>
           <p className="mt-4 text-sm leading-7 text-white/75">
             {site.representative.name} reviews every formula and stays with you after checkout.
-            Apps built on Fakelit can be published to the Google Play Store and the Apple App Store.
+            Shop the Synergy lines on this website.
           </p>
           <Link
             href="/contact"

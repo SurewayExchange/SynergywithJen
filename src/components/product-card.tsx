@@ -1,8 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AddToCartButton } from "@/components/add-to-cart-button";
+import type { CatalogProduct } from "@/lib/catalog";
 import { formatMoney } from "@/lib/products";
 import type { Product } from "@/lib/shopify-types";
+
+function lineName(product: Product) {
+  return "category" in product
+    ? (product as CatalogProduct).category
+    : null;
+}
 
 export function ProductCard({ product }: { product: Product }) {
   const variant = product.variants.nodes[0];
@@ -27,7 +34,12 @@ export function ProductCard({ product }: { product: Product }) {
       </Link>
       <div className="flex flex-1 flex-col gap-3 p-5">
         <div>
-          <h3 className="font-serif text-2xl leading-tight">
+          {lineName(product) ? (
+            <p className="text-[11px] tracking-[0.2em] text-sage uppercase">
+              {lineName(product)}
+            </p>
+          ) : null}
+          <h3 className="mt-1 font-serif text-2xl leading-tight">
             <Link href={`/shop/${product.handle}`}>{product.title}</Link>
           </h3>
           <p className="mt-2 line-clamp-2 text-sm leading-6 text-muted">{product.description}</p>
