@@ -17,14 +17,14 @@ export function ProductCard({ product }: { product: Product }) {
 
   return (
     <article className="group flex flex-col overflow-hidden rounded-3xl bg-card shadow-[0_12px_40px_rgba(44,70,48,0.06)]">
-      <Link href={`/shop/${product.handle}`} className="relative aspect-[4/5] overflow-hidden bg-linen">
+      <Link href={`/shop/${product.handle}`} className="relative aspect-square overflow-hidden bg-white">
         {product.featuredImage ? (
           <Image
             src={product.featuredImage.url}
             alt={product.featuredImage.altText ?? product.title}
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
-            className="object-cover transition duration-700 group-hover:scale-105"
+            className="object-contain p-6 transition duration-700 group-hover:scale-105"
           />
         ) : (
           <div className="flex h-full items-center justify-center text-sm text-muted">

@@ -1,29 +1,39 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ProductCard } from "@/components/product-card";
-import { catalog } from "@/lib/catalog";
+import { featuredHandles, getCatalogProduct } from "@/lib/catalog";
 import { site } from "@/lib/site";
 
 const heroImage = "/products/hero-synergy-nature.jpg";
-const ritualImage = "/products/trugreen.jpg";
+const ritualProduct = getCatalogProduct("proargi-9");
 
 export default function HomePage() {
-  const products = catalog.slice(0, 4);
+  const products = featuredHandles
+    .map((handle) => getCatalogProduct(handle))
+    .filter((item): item is NonNullable<typeof item> => item !== null);
 
   return (
     <main>
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-24">
         <div>
           <p className="text-xs tracking-[0.28em] text-sage uppercase">
-            Synergy WorldWide · {site.representative.name}
+            Independent reseller · {site.representative.name}
           </p>
           <h1 className="mt-4 max-w-xl font-serif text-5xl leading-tight text-forest sm:text-6xl">
             Daily vitality, with a sales rep who stays on the line.
           </h1>
           <p className="mt-6 max-w-lg text-base leading-8 text-muted">
-            {site.tagline} Shop ProArgi-9+, TruGreen+, SynerBeet, VitaLift, and
-            the rest of the cabinet, then check out with Jennifer so the stack
-            matches the week you are actually living.
+            {site.tagline} Every formula on this website is from the official{" "}
+            <a
+              href={site.officialUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-forest underline decoration-sage/40 underline-offset-4"
+            >
+              Synergy WorldWide
+            </a>{" "}
+            catalog. Order through Jennifer so the stack matches the week you
+            are actually living.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -60,8 +70,8 @@ export default function HomePage() {
               copy: "Jennifer reviews your goals before you commit to a stack — so you are not collecting bottles you will not finish.",
             },
             {
-              title: "The Synergy lines",
-              copy: "Nature-set photography of the formulas Jennifer sells — heart health, greens, beets, vitamins, energy, and restore.",
+              title: "The official catalog",
+              copy: "Heart health, fitness, microbiome, core nutrition, weight management, and L'amara — the same products listed on synergyworldwide.com.",
             },
             {
               title: "A rep who stays",
@@ -99,14 +109,16 @@ export default function HomePage() {
 
       <section className="bg-forest text-white">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2">
-          <div className="relative min-h-[360px] overflow-hidden rounded-[2rem]">
-            <Image
-              src={ritualImage}
-              alt="TruGreen+ greens formula photographed with wheatgrass in nature"
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
-            />
+          <div className="relative min-h-[360px] overflow-hidden rounded-[2rem] bg-white">
+            {ritualProduct?.featuredImage ? (
+              <Image
+                src={ritualProduct.featuredImage.url}
+                alt={ritualProduct.featuredImage.altText ?? ritualProduct.title}
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-contain p-10"
+              />
+            ) : null}
           </div>
           <div>
             <p className="text-xs tracking-[0.22em] uppercase text-white/70">

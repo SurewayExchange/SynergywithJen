@@ -4,12 +4,12 @@ export const metadata = {
 
 const articles = [
   {
-    title: "Start with the Synergy foundation",
-    copy: "Jennifer usually begins with ProArgi-9+ for circulation, VitaLift for daily coverage, and Omega-3 before stacking specialty formulas. Consistency beats a crowded cabinet.",
+    title: "Start with the official foundation",
+    copy: "Jennifer usually begins with ProArgi-9+ for circulation, VitaLift or VitaPak for daily coverage, and Omega-3 before stacking specialty formulas from the Synergy WorldWide catalog.",
   },
   {
     title: "Energy that does not borrow from tonight",
-    copy: "If afternoons fall apart, look at TruGreen+, SynerBeet, and E9 before another stimulant. Those are the fitness and energy lines she reaches for first.",
+    copy: "If afternoons fall apart, look at TruGreen+, SynerBeet, Essential Greens, and E9 before another stimulant. Those are the fitness and microbiome lines on the official shop.",
   },
   {
     title: "Sleep is a supplement strategy",
@@ -17,7 +17,7 @@ const articles = [
   },
   {
     title: "Gut first when immunity keeps looping",
-    copy: "Biome Shake with meals is Jennifer’s microbiome starting point — then she adjusts VitaLift and Vitamin D3 to your travel and stress load.",
+    copy: "Biome Shake, Biome Actives, and Biome DTX are Jennifer’s microbiome starting point — then she adjusts VitaLift and Vitamin D3 to your travel and stress load.",
   },
 ];
 
@@ -27,8 +27,9 @@ export default function WellnessPage() {
       <p className="text-xs tracking-[0.28em] text-sage uppercase">Education</p>
       <h1 className="mt-3 font-serif text-5xl text-forest">How Jennifer shops a cabinet</h1>
       <p className="mt-4 max-w-2xl text-base leading-8 text-muted">
-        Short notes from the sales floor — not medical advice. Use them to arrive at a consult
-        with better questions about the Synergy lines she sells.
+        Short notes from an independent Synergy WorldWide reseller — not medical
+        advice. Use them to arrive at a consult with better questions about the
+        official catalog she sells.
       </p>
       <div className="mt-12 grid gap-6 md:grid-cols-2">
         {articles.map((article) => (

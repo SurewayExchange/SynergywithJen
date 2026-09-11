@@ -1,14 +1,17 @@
 export const site = {
   name: "Synergy with Jen",
   shortName: "Synergy",
-  tagline: "Synergy WorldWide nutrition, guided by Jennifer Collins.",
+  tagline: "Independent Synergy WorldWide reseller, guided by Jennifer Collins.",
   description:
-    "A website shop for Synergy WorldWide product lines — ProArgi-9+, TruGreen+, SynerBeet, VitaLift, and more — guided by sales representative Jennifer Collins.",
+    "Jennifer Collins is an independent reseller of Synergy WorldWide products. Shop the official US catalog — ProArgi-9+, TruGreen+, SynerBeet, VitaLift, L'amara, and more — on this website.",
+  officialName: "Synergy WorldWide",
+  officialUrl: "https://www.synergyworldwide.com/",
+  officialShopUrl: "https://www.synergyworldwide.com/en-US/Shop/all-products",
   representative: {
     name: "Jennifer Collins",
-    role: "Synergy WorldWide sales representative",
-    headline: "Your personal guide to the Synergy cabinet",
-    bio: "Jennifer Collins is a Synergy WorldWide sales representative. She helps clients choose from the real product lines — ProArgi-9+, TruGreen+, SynerBeet, VitaLift, E9, and restore — and stays close after checkout. Shop the cabinet on this website.",
+    role: "Independent Synergy WorldWide reseller",
+    headline: "Your personal guide to the official Synergy catalog",
+    bio: "Jennifer Collins is an independent reseller of Synergy WorldWide. She sells the products listed on the official site — heart health, fitness, microbiome, core nutrition, weight management, and L'amara — and stays close after checkout. This is her website shop, not an app.",
   },
   url: "https://synergywithjen.vercel.app",
   email: "hello@synergywithjen.com",

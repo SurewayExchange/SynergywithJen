@@ -40,6 +40,10 @@ export default async function ProductPage({
   const line = getCatalogProduct(product.handle);
   const more = catalog
     .filter((item) => item.handle !== product.handle)
+    .sort((a, b) => {
+      const same = Number(b.category === line?.category) - Number(a.category === line?.category);
+      return same;
+    })
     .slice(0, 3);
 
   return (
@@ -48,7 +52,7 @@ export default async function ProductPage({
         ← Back to shop
       </Link>
       <div className="mt-8 grid gap-12 lg:grid-cols-2">
-        <div className="relative min-h-[420px] overflow-hidden rounded-[2rem] bg-linen">
+        <div className="relative min-h-[420px] overflow-hidden rounded-[2rem] bg-white">
           {product.featuredImage ? (
             <Image
               src={product.featuredImage.url}
@@ -56,17 +60,18 @@ export default async function ProductPage({
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
+              className="object-contain p-10"
             />
           ) : null}
         </div>
         <div>
           <p className="text-xs tracking-[0.28em] text-sage uppercase">
-            {line?.category ?? "Guided by Jennifer Collins"}
+            {line?.category ?? "Synergy WorldWide"} · Reseller: Jennifer Collins
           </p>
           <h1 className="mt-3 font-serif text-5xl text-forest">{product.title}</h1>
           <p className="mt-4 text-xl text-forest">
-            {formatMoney(price.amount, price.currencyCode)}
+            {formatMoney(price.amount, price.currencyCode)}{" "}
+            <span className="text-sm font-normal text-muted">official retail</span>
           </p>
           {line ? (
             <p className="mt-2 text-sm text-sage">
@@ -79,7 +84,7 @@ export default async function ProductPage({
               <AddToCartButton
                 variantId={variant.id}
                 availableForSale={product.availableForSale && variant.availableForSale}
-                label="Add to cart"
+                label="Order with Jen"
               />
             ) : null}
             <Link
@@ -88,6 +93,16 @@ export default async function ProductPage({
             >
               Ask Jen about this
             </Link>
+            {line ? (
+              <a
+                href={line.officialUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border border-sage/30 px-5 py-2.5 text-sm font-medium text-forest"
+              >
+                Official product page
+              </a>
+            ) : null}
           </div>
         </div>
       </div>

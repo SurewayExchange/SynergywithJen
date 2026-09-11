@@ -11,6 +11,14 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "usprod.synergyworldwide.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.synergyworldwide.com",
+      },
     ],
   },
   async redirects() {
