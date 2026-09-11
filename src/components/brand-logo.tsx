@@ -15,7 +15,7 @@ export function BrandLogo({
   size: "header" | "footer";
   priority?: boolean;
 }) {
-  const [frame, setFrame] = useState(site.logo);
+  const [frame, setFrame] = useState<string>(site.logo);
   const [waving, setWaving] = useState(false);
 
   useEffect(() => {
