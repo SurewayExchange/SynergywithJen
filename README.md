@@ -1,4 +1,4 @@
-# Senergy with Jen
+# Synergy with Jen
 
 Vitamin supplement storefront for sales representative **Jennifer Collins**. Built on [Fakelit](https://www.fakelit.com) — the first website, app, and game development platform all in one. Apps built on Fakelit can be published to the Google Play Store and the Apple App Store.
 

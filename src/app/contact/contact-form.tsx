@@ -17,7 +17,7 @@ export function ContactForm({
       <div className="mt-10 rounded-[1.75rem] bg-card p-8">
         <h2 className="font-serif text-3xl text-forest">Jennifer has your note.</h2>
         <p className="mt-3 text-sm leading-7 text-muted">
-          She will follow up as your Senergy sales representative. If your mail app opened,
+          She will follow up as your Synergy sales representative. If your mail app opened,
           send the message to finish.
         </p>
       </div>
@@ -36,8 +36,8 @@ export function ContactForm({
         const message = String(form.get("message") ?? "");
         const subject =
           intent === "checkout"
-            ? `Senergy order request from ${name}`
-            : `Senergy consult from ${name}`;
+            ? `Synergy order request from ${name}`
+            : `Synergy consult from ${name}`;
         const body = [
           `Name: ${name}`,
           `Email: ${email}`,

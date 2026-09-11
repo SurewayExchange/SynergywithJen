@@ -43,7 +43,7 @@ export default async function ContactPage({
         </h1>
         <p className="mt-5 text-base leading-8 text-muted">
           {isCheckout
-            ? "Jennifer will confirm your Senergy cabinet and follow up on fulfillment."
+            ? "Jennifer will confirm your Synergy cabinet and follow up on fulfillment."
             : `Share your goals, current bottles, and anything your clinician has already flagged. ${site.representative.name} will help you choose from the cabinet.`}
         </p>
         {cartSummary ? (

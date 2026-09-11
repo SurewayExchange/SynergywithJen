@@ -16,22 +16,22 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "/shop/daily-synergy-multi",
-        destination: "/shop/daily-senergy-multi",
+        source: "/shop/daily-senergy-multi",
+        destination: "/shop/daily-synergy-multi",
         permanent: true,
       },
       {
-        source: "/synergywithjen",
+        source: "/senergywithjen",
         destination: "/",
         permanent: true,
       },
       {
-        source: "/synergy-with-jen",
+        source: "/senergy-with-jen",
         destination: "/",
         permanent: true,
       },
       {
-        source: "/synergy",
+        source: "/senergy",
         destination: "/",
         permanent: true,
       },

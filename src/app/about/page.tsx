@@ -16,7 +16,7 @@ export default function AboutPage() {
           <p className="mt-4 text-xl text-forest">{site.representative.headline}</p>
           <p className="mt-6 text-base leading-8 text-muted">{site.representative.bio}</p>
           <p className="mt-4 text-base leading-8 text-muted">
-            Senergy with Jen is her vitamin supplement storefront — a quieter alternative to
+            Synergy with Jen is her vitamin supplement storefront — a quieter alternative to
             warehouse aisles, built so clients can shop clean formulas and still talk to the
             person who sold them. The experience is built on Fakelit, the first website, app,
             and game development platform all in one.

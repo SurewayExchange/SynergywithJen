@@ -61,8 +61,8 @@ function product({
 
 export const catalog: CatalogProduct[] = [
   product({
-    handle: "daily-senergy-multi",
-    title: "Daily Senergy Multi",
+    handle: "daily-synergy-multi",
+    title: "Daily Synergy Multi",
     description:
       "Jennifer’s foundational multivitamin for busy days — methylated B vitamins, chelated minerals, and a gentle food-based blend that supports energy without the crash.",
     amount: "42.00",
