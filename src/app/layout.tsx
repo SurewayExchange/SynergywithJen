@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description: site.description,
+  icons: {
+    icon: [{ url: site.favicon, type: "image/png" }],
+    apple: [{ url: site.favicon, type: "image/png" }],
+    shortcut: site.favicon,
+  },
 };
 
 export default function RootLayout({

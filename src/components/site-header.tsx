@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { getCart } from "@/lib/cart-actions";
 import { site } from "@/lib/site";
@@ -13,12 +14,24 @@ export async function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-linen/80 bg-background/90 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-4 sm:px-6">
-        <Link href="/" className="min-w-0">
-          <p className="text-[11px] tracking-[0.28em] text-sage uppercase">
-            {site.officialName}
-          </p>
-          <p className="font-serif text-2xl leading-none">{site.name}</p>
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3 sm:px-6">
+        <Link href="/" className="flex min-w-0 items-center gap-3">
+          <Image
+            src={site.logo}
+            alt={site.name}
+            width={72}
+            height={72}
+            priority
+            className="h-14 w-14 rounded-full bg-white shadow-[0_4px_16px_rgba(44,70,48,0.12)] sm:h-[4.5rem] sm:w-[4.5rem]"
+          />
+          <span className="min-w-0">
+            <span className="block text-[11px] tracking-[0.28em] text-sage uppercase">
+              {site.officialName}
+            </span>
+            <span className="block truncate font-serif text-2xl leading-none">
+              {site.name}
+            </span>
+          </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm md:flex">
           {site.nav.map((item) => (
