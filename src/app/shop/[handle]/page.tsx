@@ -66,7 +66,7 @@ export default async function ProductPage({
         </div>
         <div>
           <p className="text-xs tracking-[0.28em] text-sage uppercase">
-            {line?.category ?? "Synergy WorldWide"} · Reseller: Jennifer Collins
+            {line?.category ?? "Synergy WorldWide"} · Sold by Synergy with Jen
           </p>
           <h1 className="mt-3 font-serif text-5xl text-forest">{product.title}</h1>
           <p className="mt-4 text-xl text-forest">

@@ -17,10 +17,10 @@ export default function HomePage() {
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-24">
         <div>
           <p className="text-xs tracking-[0.28em] text-sage uppercase">
-            Independent reseller · {site.representative.name}
+            {site.name} · {site.officialName}
           </p>
           <h1 className="mt-4 max-w-xl font-serif text-5xl leading-tight text-forest sm:text-6xl">
-            Daily vitality, with a sales rep who stays on the line.
+            Daily vitality, with a company that stays on the line.
           </h1>
           <p className="mt-6 max-w-lg text-base leading-8 text-muted">
             {site.tagline} Every formula on this website is from the official{" "}
@@ -32,8 +32,8 @@ export default function HomePage() {
             >
               Synergy WorldWide
             </a>{" "}
-            catalog. Order through Jennifer so the stack matches the week you
-            are actually living.
+            catalog. Order through Synergy with Jen so the stack matches the
+            week you are actually living.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -74,8 +74,8 @@ export default function HomePage() {
               copy: "Heart health, fitness, microbiome, core nutrition, weight management, and L'amara — the same products listed on synergyworldwide.com.",
             },
             {
-              title: "A rep who stays",
-              copy: "Questions after delivery go to Jen, not a ticket queue. That is the difference of a sales-rep shop.",
+              title: "A company that stays",
+              copy: "Questions after delivery go to Synergy with Jen, not a ticket queue.",
             },
           ].map((item) => (
             <div key={item.title}>

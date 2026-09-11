@@ -27,9 +27,9 @@ export default function WellnessPage() {
       <p className="text-xs tracking-[0.28em] text-sage uppercase">Education</p>
       <h1 className="mt-3 font-serif text-5xl text-forest">How Jennifer shops a cabinet</h1>
       <p className="mt-4 max-w-2xl text-base leading-8 text-muted">
-        Short notes from an independent Synergy WorldWide reseller — not medical
-        advice. Use them to arrive at a consult with better questions about the
-        official catalog she sells.
+        Short notes from Synergy with Jen — not medical advice. Use them to
+        arrive at a consult with better questions about the official catalog
+        the company sells.
       </p>
       <div className="mt-12 grid gap-6 md:grid-cols-2">
         {articles.map((article) => (

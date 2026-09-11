@@ -10,15 +10,15 @@ export default function ShopPage() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
       <p className="text-xs tracking-[0.28em] text-sage uppercase">
-        Official catalog · Jennifer is a reseller
+        Official catalog · Sold by Synergy with Jen
       </p>
       <h1 className="mt-3 font-serif text-5xl text-forest">
-        Every product Jennifer sells
+        The Synergy with Jen catalog
       </h1>
       <p className="mt-4 max-w-2xl text-base leading-8 text-muted">
         The full Synergy WorldWide US product list, with official pack photography
-        and retail prices. Jennifer Collins is an independent reseller — order
-        through her on this website, or review the source catalog on{" "}
+        and retail prices. Synergy with Jen sells these products — order on this
+        website, or review the source catalog on{" "}
         <a
           href={site.officialShopUrl}
           target="_blank"

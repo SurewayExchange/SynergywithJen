@@ -392,7 +392,7 @@ export const catalog: CatalogProduct[] = [
     handle: "lamara-daily-nourishing-cleanser",
     title: "L'amara Daily Nourishing Cleanser",
     description:
-      "Daily cleanser from Synergy’s L'amara skincare line. Jennifer resells the full collection.",
+      "Daily cleanser from Synergy’s L'amara skincare line. Synergy with Jen carries the full collection.",
     amount: "38.40",
     image:
       "/globalassets/synergy-products-catalog/products/us-4932103205c64d55b0009d65900f33c5.png?v=210126182853",

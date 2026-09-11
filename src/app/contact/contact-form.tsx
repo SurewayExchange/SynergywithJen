@@ -17,8 +17,8 @@ export function ContactForm({
       <div className="mt-10 rounded-[1.75rem] bg-card p-8">
         <h2 className="font-serif text-3xl text-forest">Jennifer has your note.</h2>
         <p className="mt-3 text-sm leading-7 text-muted">
-          She will follow up as your Synergy sales representative. If your mail app opened,
-          send the message to finish.
+          Synergy with Jen will follow up. If your mail app opened, send the
+          message to finish.
         </p>
       </div>
     );

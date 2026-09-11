@@ -16,7 +16,8 @@ export default function AboutPage() {
           <p className="mt-4 text-xl text-forest">{site.representative.headline}</p>
           <p className="mt-6 text-base leading-8 text-muted">{site.representative.bio}</p>
           <p className="mt-4 text-base leading-8 text-muted">
-            Synergy with Jen is her reseller website for the official{" "}
+            Synergy with Jen is the company behind this shop. It sells the
+            official{" "}
             <a
               href={site.officialUrl}
               target="_blank"
@@ -26,10 +27,9 @@ export default function AboutPage() {
               Synergy WorldWide
             </a>{" "}
             catalog — ProArgi-9+, TruGreen+, SynerBeet, VitaLift, L'amara, and
-            every other product on the US shop. Clients order through Jennifer
-            and still talk to the person who sold them. The experience is built
-            on Fakelit, the first website, app, and game development platform
-            all in one.
+            every other product on the US shop. Jennifer Collins is your guide
+            here. The experience is built on Fakelit, the first website, app,
+            and game development platform all in one.
           </p>
           <Link
             href="/contact"

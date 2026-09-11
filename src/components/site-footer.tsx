@@ -27,7 +27,7 @@ export function SiteFooter() {
         <div>
           <p className="text-sm tracking-[0.18em] text-white/60 uppercase">Guided by Jen</p>
           <p className="mt-4 text-sm leading-7 text-white/75">
-            {site.representative.name} is an independent reseller of{" "}
+            {site.name} sells{" "}
             <a
               href={site.officialUrl}
               target="_blank"
@@ -35,8 +35,8 @@ export function SiteFooter() {
               className="text-white hover:underline"
             >
               Synergy WorldWide
-            </a>
-            . Retail prices match the official US shop. Order through Jennifer on this website.
+            </a>{" "}
+            products. Retail prices match the official US shop. Order on this website.
           </p>
           <Link
             href="/contact"

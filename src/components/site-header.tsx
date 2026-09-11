@@ -16,7 +16,7 @@ export async function SiteHeader() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-4 sm:px-6">
         <Link href="/" className="min-w-0">
           <p className="text-[11px] tracking-[0.28em] text-sage uppercase">
-            {site.representative.name}
+            {site.officialName}
           </p>
           <p className="font-serif text-2xl leading-none">{site.name}</p>
         </Link>
