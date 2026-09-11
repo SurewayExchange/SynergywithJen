@@ -1,15 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f4efe6;
-  --foreground: #1c2419;
-  --card: #fffaf3;
-  --muted: #5f6b5a;
-  --sage: #4f6f52;
-  --forest: #2c4630;
-  --terracotta: #c4784a;
-  --linen: #e8dfd0;
-  --ring: #4f6f52;
+  --background: #f7f1fc;
+  --foreground: #2a1248;
+  --card: #fff9ff;
+  --muted: #6d5a7e;
+  --sage: #7a3bb8;
+  --forest: #4a1878;
+  --terracotta: #d4af37;
+  --linen: #eadcf5;
+  --ring: #7a3bb8;
+  --gold: #d4af37;
 }
 
 @theme inline {
@@ -22,6 +23,7 @@
   --color-terracotta: var(--terracotta);
   --color-linen: var(--linen);
   --color-ring: var(--ring);
+  --color-gold: var(--gold);
   --font-sans: "Outfit", "Outfit Fallback", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Fraunces", "Fraunces Fallback", ui-serif, Georgia, serif;
 }
@@ -37,20 +39,46 @@ body {
 }
 
 ::selection {
-  background: #cfe0c8;
-  color: #1c2419;
+  background: #e4c8ff;
+  color: #2a1248;
 }
 
 .field {
   width: 100%;
   border-radius: 1rem;
   border: 1px solid var(--linen);
-  background: #fffaf3;
+  background: #fff9ff;
   padding: 0.85rem 1rem;
   color: var(--foreground);
   outline: none;
 }
 
 .field:focus {
-  box-shadow: 0 0 0 3px rgb(79 111 82 / 0.2);
+  box-shadow: 0 0 0 3px rgb(122 59 184 / 0.2);
+}
+
+@keyframes logo-wave-bob {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-4deg);
+  }
+  45% {
+    transform: rotate(6deg);
+  }
+  70% {
+    transform: rotate(-3deg);
+  }
+}
+
+.logo-waving {
+  animation: logo-wave-bob 0.55s ease-in-out 4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-waving {
+    animation: none;
+  }
 }

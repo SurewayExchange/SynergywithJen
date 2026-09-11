@@ -16,6 +16,8 @@ export const site = {
   url: "https://synergywithjen.vercel.app",
   email: "hello@synergywithjen.com",
   logo: "/Assets/SwJ_Logos/SWJ_Logo.png",
+  logoWave1: "/Assets/SwJ_Logos/SWJ_Logo_wave1.png",
+  logoWave2: "/Assets/SwJ_Logos/SWJ_Logo_wave2.png",
   favicon: "/Assets/SwJ_Logos/SWJ_Favicon.png",
   nav: [
     { href: "/", label: "Home" },
